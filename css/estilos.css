@@ -1,0 +1,355 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*Fuente importada de Google Font*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /*Fuente importada de Google Font*/
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav li a{
+    color: #00AEEF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover{
+    color: #1E50DC;
+    text-decoration: none;
+}
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+.iconos a:hover {
+   
+    color: #07A081;
+    
+}
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+.principal {
+    background-image: url('../imagen/section1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 15px;
+    /*Fuente Importada de Google Fonts*/
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    /*-------------------------------*/
+}
+
+.contenidouno h2{
+    margin-bottom: 15px;
+    /*Fuente Importada de Google Fonts*/
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+    font-style: normal;
+    /*-------------------------------*/
+}
+
+.contenidouno p{
+    margin-bottom: 30px;
+    /*Fuente Importada de Google Fonts*/
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+     /*-------------------------------*/
+    color:#00AEEF;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 0 30px;
+    display: inline-block; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    /*Fuente Importada de Google Fonts*/
+    font-family: "Libre Franklin", sans-serif;
+    font-style: normal;
+     /*-------------------------------*/
+}
+
+.button:hover {
+    background-color: #05705A;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 30px;
+    transform: scale(1.1); 
+}
+
+
+/*estilos para el contenido dos*/
+
+.banner {
+    background-image: url('../imagen/section2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidodos {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 174, 239, 0.5);
+}
+
+.contenidodos h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.figuras {
+    display: flex;
+    justify-content: center;
+}
+
+.figuras a {
+    margin: 0 20px;
+    color: #faf7f7;
+    font-size: 18px;
+}
+.figuras a:hover {
+   
+    color: #f3e306;
+    transition: color 0.3s ease;
+    
+}
+
+
+
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+  .galeria {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #E5F7F3 50%, #00AEEF 100%);
+    padding: 50px 0;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    height: 550px;
+   
+    }
+
+  .galeria h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #07A081;
+  }
+
+  .galeria p {
+    color: #535656;
+    text-align: center;
+    font-size: 14px;
+    line-height:5px ;
+    margin-bottom:0px;
+  }
+
+  .contenidotres {
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+
+  .contenidotres .columna {
+    flex: 1;
+    margin-top: 90px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #04416a;
+    padding: 5px;
+    border-radius: 4px;
+    
+  }
+
+  .contenidotres .columna p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .contenidotres .columna a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+
+  .contenidotres .columna a:hover {
+    background-color: #059377;
+    transform: translateY(-2px); 
+    color: #FFFFFF;
+  }
+
+
+  
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+
+  .footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    /*------------------------------------*/
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    /*------------------------------------*/
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .filas{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .filas h3{
+    margin-right: 10px;
+  }
+
+  
+  
+  h3, p {
+    color: #00AEEF;
+    margin: 0;
+  }
+  
+  .social-icons1 {
+    display: flex;
+  }
+  
+
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1E50DC; 
+}
+  
+
